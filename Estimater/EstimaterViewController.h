@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectITTViewController : UIViewController
+@interface EstimaterViewController : UIViewController
 
 @end
