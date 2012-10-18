@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "SelectITTAppDelegate.h"
+#import "EstimaterAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([SelectITTAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([EstimaterAppDelegate class]));
     }
 }

@@ -7,6 +7,7 @@
 //
 
 #import "TimeViewController.h"
+#import "ServiceHelper.h"
 
 @interface TimeViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *userInfo;
@@ -39,13 +40,28 @@
 - (IBAction)closePicker:(UIBarButtonItem *)sender 
 {
     [self.time endEditing:YES];
+    self.sendEstimate.enabled = YES;
 //    self.sendEstimate.frame = CGRectMake(self.sendEstimate.frame.origin.x, self.sendEstimate.frame.origin.y+100, self.sendEstimate.frame.size.width, self.sendEstimate.frame.size.height);
     
 }
 
 - (IBAction)sendEstimateTime:(UIButton *)sender 
 {
-    
+    ServiceHelper* helper = [ServiceHelper getServiceHelper];
+
+    NSMutableDictionary *dic = [@{@"Voter":[[NSUserDefaults standardUserDefaults] objectForKey:@"userName"],@"Point":self.time.text} mutableCopy];
+    [helper sendPost:@"http://192.168.1.155/PointEstimation/api/point" sendData:dic onCompetion:^(MKNetworkOperation *op) {
+    NSString* str = [op responseString];
+        if ([str isEqualToString:@"\"Success\""]) {
+            [[[UIAlertView alloc] initWithTitle:@"OK" message:@"Send Time Success" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+        }
+        else
+        {
+            [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Server Exception,Please Try Again" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+        }
+    } onError:^(NSError *error) {
+            NSLog(@"%@",error);
+    }];
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -87,6 +103,7 @@
     self.time.inputView = self.dataSelecter;
     self.time.inputAccessoryView = self.doneToolbar;
     self.dataSelecter.frame = CGRectMake(0, 480, 320, 216);
+    self.sendEstimate.enabled = NO;
 }
 
 - (void)viewDidUnload

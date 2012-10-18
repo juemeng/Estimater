@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tPf-Iy-DJx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tPf-Iy-DJx">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
         <!--Estimater View Controller - Estimater-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="EstimaterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -62,13 +60,13 @@
                         <segue destination="Kp0-od-JSq" kind="push" identifier="time" id="oaj-sa-BQn"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="400" y="50"/>
         </scene>
         <!--Time View Controller - Input-->
         <scene sceneID="hmZ-W0-JhY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="00X-Rp-sop" sceneMemberID="firstResponder"/>
                 <viewController id="Kp0-od-JSq" customClass="TimeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Xs-zb-0yx">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -143,6 +141,7 @@
                         <outlet property="userInfo" destination="F1q-ig-DM1" id="KFe-KT-JX7"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00X-Rp-sop" sceneMemberID="firstResponder"/>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="I98-9Z-Mr5">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -156,7 +155,6 @@
         <!--Navigation Controller-->
         <scene sceneID="gzf-tb-nSR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipz-q3-Xem" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="tPf-Iy-DJx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="SjG-Bm-hDX">
@@ -168,28 +166,11 @@
                         <segue destination="2" kind="relationship" relationship="rootViewController" id="nnS-VW-ZOh"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipz-q3-Xem" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-77" y="26"/>
+            <point key="canvasLocation" x="4" y="37"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="EstimaterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EstimaterViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="userName" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="TimeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TimeViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSelecter" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="doneToolbar" candidateClass="UIToolbar"/>
-                <relationship kind="outlet" name="sendEstimate" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="time" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="userInfo" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

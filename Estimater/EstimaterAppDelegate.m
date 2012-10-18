@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "SelectITTAppDelegate.h"
+#import "EstimaterAppDelegate.h"
 
-@implementation SelectITTAppDelegate
+@implementation EstimaterAppDelegate
 
 @synthesize window = _window;
 

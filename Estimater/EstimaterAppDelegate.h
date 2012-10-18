@@ -1,5 +1,5 @@
 //
-//  SelectITTAppDelegate.h
+//  EstimaterAppDelegate.h
 //  Estimater
 //
 //  Created by 力 邹 on 12-10-16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectITTAppDelegate : UIResponder <UIApplicationDelegate>
+@interface EstimaterAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
