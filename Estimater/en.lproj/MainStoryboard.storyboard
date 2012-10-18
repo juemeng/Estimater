@@ -6,11 +6,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--SelectITT View Controller - Estimater-->
+        <!--Estimater View Controller - Estimater-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="SelectITTViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="EstimaterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,7 +63,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="121" y="414"/>
+            <point key="canvasLocation" x="400" y="50"/>
         </scene>
         <!--Time View Controller - Input-->
         <scene sceneID="hmZ-W0-JhY">
@@ -151,7 +151,7 @@
                     </items>
                 </toolbar>
             </objects>
-            <point key="canvasLocation" x="552" y="51"/>
+            <point key="canvasLocation" x="870" y="56"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gzf-tb-nSR">
@@ -173,8 +173,8 @@
         </scene>
     </scenes>
     <classes>
-        <class className="SelectITTViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectITTViewController.h"/>
+        <class className="EstimaterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EstimaterViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="userName" candidateClass="UITextField"/>
             </relationships>

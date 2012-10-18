@@ -14,7 +14,7 @@
 		0C27D4C4162CF23B00836E18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C27D4C3162CF23B00836E18 /* main.m */; };
 		0C27D4C8162CF23B00836E18 /* SelectITTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C27D4C7162CF23B00836E18 /* SelectITTAppDelegate.m */; };
 		0C27D4CB162CF23B00836E18 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C27D4C9162CF23B00836E18 /* MainStoryboard.storyboard */; };
-		0C27D4CE162CF23B00836E18 /* SelectITTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C27D4CD162CF23B00836E18 /* SelectITTViewController.m */; };
+		0C27D4CE162CF23B00836E18 /* EstimaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C27D4CD162CF23B00836E18 /* EstimaterViewController.m */; };
 		0C27D4E2162CFDF300836E18 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C27D4E1162CFDF300836E18 /* TimeViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +30,8 @@
 		0C27D4C6162CF23B00836E18 /* SelectITTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectITTAppDelegate.h; sourceTree = "<group>"; };
 		0C27D4C7162CF23B00836E18 /* SelectITTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectITTAppDelegate.m; sourceTree = "<group>"; };
 		0C27D4CA162CF23B00836E18 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		0C27D4CC162CF23B00836E18 /* SelectITTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectITTViewController.h; sourceTree = "<group>"; };
-		0C27D4CD162CF23B00836E18 /* SelectITTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectITTViewController.m; sourceTree = "<group>"; };
+		0C27D4CC162CF23B00836E18 /* EstimaterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EstimaterViewController.h; sourceTree = "<group>"; };
+		0C27D4CD162CF23B00836E18 /* EstimaterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EstimaterViewController.m; sourceTree = "<group>"; };
 		0C27D4E0162CFDF300836E18 /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
 		0C27D4E1162CFDF300836E18 /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,8 +85,8 @@
 				0C27D4C9162CF23B00836E18 /* MainStoryboard.storyboard */,
 				0C27D4E0162CFDF300836E18 /* TimeViewController.h */,
 				0C27D4E1162CFDF300836E18 /* TimeViewController.m */,
-				0C27D4CC162CF23B00836E18 /* SelectITTViewController.h */,
-				0C27D4CD162CF23B00836E18 /* SelectITTViewController.m */,
+				0C27D4CC162CF23B00836E18 /* EstimaterViewController.h */,
+				0C27D4CD162CF23B00836E18 /* EstimaterViewController.m */,
 				0C27D4BE162CF23B00836E18 /* Supporting Files */,
 			);
 			path = Estimater;
@@ -168,7 +168,7 @@
 			files = (
 				0C27D4C4162CF23B00836E18 /* main.m in Sources */,
 				0C27D4C8162CF23B00836E18 /* SelectITTAppDelegate.m in Sources */,
-				0C27D4CE162CF23B00836E18 /* SelectITTViewController.m in Sources */,
+				0C27D4CE162CF23B00836E18 /* EstimaterViewController.m in Sources */,
 				0C27D4E2162CFDF300836E18 /* TimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +281,7 @@
 				0C27D4D3162CF23B00836E18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,14 +6,14 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "SelectITTViewController.h"
+#import "EstimaterViewController.h"
 
-@interface SelectITTViewController ()
+@interface EstimaterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userName;
 
 @end
 
-@implementation SelectITTViewController
+@implementation EstimaterViewController
 @synthesize userName;
 
 - (IBAction)startEstimate:(UIButton *)sender 
