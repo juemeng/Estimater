@@ -41,8 +41,6 @@
 {
     [self.time endEditing:YES];
     self.sendEstimate.enabled = YES;
-//    self.sendEstimate.frame = CGRectMake(self.sendEstimate.frame.origin.x, self.sendEstimate.frame.origin.y+100, self.sendEstimate.frame.size.width, self.sendEstimate.frame.size.height);
-    
 }
 
 - (IBAction)sendEstimateTime:(UIButton *)sender 
@@ -50,7 +48,8 @@
     ServiceHelper* helper = [ServiceHelper getServiceHelper];
 
     NSMutableDictionary *dic = [@{@"Voter":[[NSUserDefaults standardUserDefaults] objectForKey:@"userName"],@"Point":self.time.text} mutableCopy];
-    [helper sendPost:@"http://192.168.1.155/PointEstimation/api/point" sendData:dic onCompetion:^(MKNetworkOperation *op) {
+    
+    [helper sendPost:@"http://estimate.offshore3.com/api/point" sendData:dic onCompetion:^(MKNetworkOperation *op) {
     NSString* str = [op responseString];
         if ([str isEqualToString:@"\"Success\""]) {
             [[[UIAlertView alloc] initWithTitle:@"OK" message:@"Send Time Success" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
@@ -93,6 +92,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *uName = [userDefault objectForKey:@"userName"];
     self.userInfo.text = [uName stringByAppendingString:@" Please Select Hour"];
