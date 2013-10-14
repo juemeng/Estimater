@@ -11,11 +11,11 @@
 @interface ServiceHelper:NSObject
 
 typedef void (^SucceedBlock)(MKNetworkOperation* op);
-typedef void (^ErrorBlock)(NSError* error);
+
 
 +(ServiceHelper*)getServiceHelper;
 
--(void)sendGet:(NSString*)url sendData:(NSMutableDictionary *)data onCompetion:(SucceedBlock)comption onError:(ErrorBlock)err;
--(void)sendPost:(NSString*)url sendData:(NSMutableDictionary *)data onCompetion:(SucceedBlock)comption onError:(ErrorBlock)err;
+-(void)sendGet:(NSString*)url sendData:(NSMutableDictionary *)data onCompetion:(SucceedBlock)comption onError:(MKNKErrorBlock)err;
+-(void)sendPost:(NSString*)url sendData:(NSMutableDictionary *)data onCompetion:(SucceedBlock)comption onError:(MKNKErrorBlock)err;
 
 @end

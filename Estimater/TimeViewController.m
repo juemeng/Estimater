@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIToolbar *doneToolbar;
 @property (weak, nonatomic) IBOutlet UIButton *sendEstimate;
 
-@property NSMutableArray* dataArray;
+@property (strong, nonatomic) NSMutableArray* dataArray;
 @end
 
 @implementation TimeViewController
@@ -96,7 +96,7 @@
 	NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *uName = [userDefault objectForKey:@"userName"];
     self.userInfo.text = [uName stringByAppendingString:@" Please Select Hour"];
-    self.dataArray = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24", nil];
+    self.dataArray = [NSMutableArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24", nil];
     self.time.delegate = self;
     self.dataSelecter.delegate = self;
     self.dataSelecter.dataSource = self;
